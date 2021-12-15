@@ -107,56 +107,38 @@ body {
   background-size: 100% 100%;
 }
 </style>
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact form</title>
-</head>
 
-<div id="footer" class="container">
-    <header>
-        <h2>Questions or comments? <strong>Get in touch:</strong></h2>
-    </header>
-    <div class="row">
-        <div class="6u">
-            <section>
-                <form>
-                    <div class="row half">
-                        <div class="6u">
-                            <input name="name" placeholder="Name" type="text" class="text" />
-                        </div>
-                        <div class="6u">
-                            <input name="Subject" placeholder="Subject" type="text" class="text" />
-                        </div>
-                    </div>
-                    <div class="row half">
-                        <div class="12u">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row half">
-                        <div class="12u">
-                            <a href="#" class="button button-icon icon icon-envelope">Send Message</a>
-                        </div>
-                    </div>
-                </form>
-            </section>
-        </div>
-
-        <div class="row">
-            <ul class="icons 6u">
-                <li class="icon icon-home">
-                    <h6> 1235 street <br />
-                    city, state 0000<br /> </h6>
-                </li>
-                <li class="icon icon-phone">
-                    <h6>(000) 000-0000 </h6>
-                </li>
-                <li class="icon icon-envelope">
-                    <a href="mailto:hello@hello.com">hello@hello.com</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Give Feedback to Our Website.</h2>
+    <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <div>
+        <label for="name">Name:
+          <input type="text" name="name" id="name" />
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input type="text" name="email" id="email" />
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+      </div>
+      <div>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -114,37 +114,49 @@ body {
     <title>contact form</title>
 </head>
 
-<body>
-
-<link href="contact-form.css" rel="stylesheet">
-
-<div class="fcf-body">
-
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
+<div id="footer" class="container">
+    <header>
+        <h2>Questions or comments? <strong>Get in touch:</strong></h2>
+    </header>
+    <div class="row">
+        <div class="6u">
+            <section>
+                <form>
+                    <div class="row half">
+                        <div class="6u">
+                            <input name="name" placeholder="Name" type="text" class="text" />
+                        </div>
+                        <div class="6u">
+                            <input name="Subject" placeholder="Subject" type="text" class="text" />
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <a href="#" class="button button-icon icon icon-envelope">Send Message</a>
+                        </div>
+                    </div>
+                </form>
+            </section>
         </div>
 
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
+        <div class="row">
+            <ul class="icons 6u">
+                <li class="icon icon-home">
+                    <h6> 1235 street <br />
+                    city, state 0000<br /> </h6>
+                </li>
+                <li class="icon icon-phone">
+                    <h6>(000) 000-0000 </h6>
+                </li>
+                <li class="icon icon-envelope">
+                    <a href="mailto:hello@hello.com">hello@hello.com</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div cl
+    </div>
 

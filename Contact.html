@@ -107,44 +107,44 @@ body {
   background-size: 100% 100%;
 }
 </style>
-<form action=”mailto:contact@yourdomain.com”
 
+<div id="footer" class="container">
+    <header>
+        <h2>Questions or comments? <strong>Get in touch:</strong></h2>
+    </header>
+    <div class="row">
+        <div class="6u">
+            <section>
+                <form>
+                    <div class="row half">
+                        <div class="6u">
+                            <input name="name" placeholder="Name" type="text" class="text" />
+                        </div>
+                        <div class="6u">
+                            <input name="Subject" placeholder="Subject" type="text" class="text" />
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row half">
+                        <div class="12u">
+                            <a href="#" class="button button-icon icon icon-envelope">Send Message</a>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
 
-method=”POST”
-
-
-enctype=”multipart/form-data”
-
-
-name=”EmailForm”>
-
-
-Name:<br>
-
-
-<input type=”text” size=”19″ name=”ContactName”><br><br>
-
-
-Message:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
-
-
-</textarea><br><br> <input type=”submit” value=”Submit”> </form>
-
-<?php
-
-
-if($_POST["message"]) {
-
-
-mail("your@email.address", "Here is the subject line",
-
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-
-}
-
-
-?>
+        <div class="row">
+            <ul class="icons 6u">
+                <li class="icon icon-home">
+                    <h6> 1235 street <br />
+                    city, state 0000<br /> </h6>
+                </li>
+                <li class="icon icon-phone">
+      
 
 
